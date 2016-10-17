@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cv="http://captsolo.net/semweb/resume/0.2/cv.rdf#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xml:base="http://captsolo.net/semweb/resume/0.2/base.rdf">
+
+  <rdf:Description rdf:about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon">
+    <cv:noOfChildren>0</cv:noOfChildren>
+    <cv:maritalStatus>Single</cv:maritalStatus>
+    <cv:hasNationality>Spanish</cv:hasNationality>
+    <cv:hasDriversLicense rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cv:hasDriversLicense>
+    <cv:hasCitizenship>Spain</cv:hasCitizenship>
+    <cv:gender>female</cv:gender>
+    <cv:birthPlace>Madrid(Spain)</cv:birthPlace>
+    <foaf:mbox>yolanda93h@gmail.com</foaf:mbox>
+    <foaf:name>Yolanda de la Hoz Simon</foaf:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/WorkHistory#Yolanda_de_la_Hoz_Simon">
+    <cv:isCurrent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cv:isCurrent>
+    <cv:jobType>Employee</cv:jobType>
+    <cv:jobTitle>Software Engineer</cv:jobTitle>
+    <cv:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">01/01/2016</cv:endDate>
+    <cv:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">01/08/2014</cv:startDate>
+    <cv:employedIn rdf:resource="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Company#Intelligent_Systems_And_Knowledge_Engineering_Research_Group-Technical_University_Of_Madrid"></cv:employedIn>
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#Java">
+    <cv:skillLastUsed rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-23</cv:skillLastUsed>
+    <cv:skillLevel>1</cv:skillLevel>
+    <cv:skillYearsExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cv:skillYearsExperience>
+    <cv:skillName>Java</cv:skillName>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#C++">
+    <cv:skillLastUsed rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-23</cv:skillLastUsed>
+    <cv:skillLevel>1</cv:skillLevel>
+    <cv:skillYearsExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cv:skillYearsExperience>
+    <cv:skillName>C++</cv:skillName>
+  </rdf:Description>
+
+</rdf:RDF>

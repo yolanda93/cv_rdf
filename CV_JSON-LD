@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "cv": "http://captsolo.net/semweb/resume/0.2/cv.rdf#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/WorkHistory#Yolanda_de_la_Hoz_Simon",
+      "cv:employedIn": {
+        "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Company#Intelligent_Systems_And_Knowledge_Engineering_Research_Group-Technical_University_Of_Madrid"
+      },
+      "cv:endDate": {
+        "@type": "xsd:date",
+        "@value": "0101-01-01"
+      },
+      "cv:isCurrent": false,
+      "cv:jobDescription": "Research and development of intelligent systems for unmanned aerial vehicles",
+      "cv:jobTitle": "Software Engineer",
+      "cv:jobType": "Employee",
+      "cv:startDate": {
+        "@type": "xsd:date",
+        "@value": "0101-01-01"
+      }
+    },
+    {
+      "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#Java",
+      "cv:skillLastUsed": {
+        "@type": "xsd:date",
+        "@value": "2012-02-23"
+      },
+      "cv:skillLevel": "1",
+      "cv:skillName": "Java",
+      "cv:skillYearsExperience": 5
+    },
+    {
+      "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#C++",
+      "cv:skillLastUsed": {
+        "@type": "xsd:date",
+        "@value": "2012-02-23"
+      },
+      "cv:skillLevel": "1",
+      "cv:skillName": "C++",
+      "cv:skillYearsExperience": 3
+    },
+    {
+      "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/cv#resume-Yolanda_de_la_Hoz_Simon",
+      "cv:aboutPerson": {
+        "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon"
+      },
+      "cv:cvDescription": "My Professional Resume",
+      "cv:cvIsActive": false,
+      "cv:cvTitle": "Resume-Yolanda de la Hoz Simon",
+      "cv:hasEducation": {
+        "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Education#Masters"
+      },
+      "cv:hasSkill": [
+        {
+          "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#C++"
+        },
+        {
+          "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#Java"
+        }
+      ],
+      "cv:hasWorkHistory": {
+        "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/WorkHistory#Yolanda_de_la_Hoz_Simon"
+      },
+      "cv:lastUpdate": {
+        "@type": "xsd:date",
+        "@value": "2001-01-01"
+      }
+    },
+    {
+      "@id": "http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon",
+      "cv:birthPlace": "Madrid(Spain)",
+      "cv:gender": "female",
+      "cv:hasCitizenship": "Spain",
+      "cv:hasDriversLicense": true,
+      "cv:hasNationality": "Spanish",
+      "cv:maritalStatus": "Single",
+      "cv:noOfChildren": "0",
+      "foaf:mbox": "yolanda93h@gmail.com",
+      "foaf:name": "Yolanda de la Hoz Simon"
+    }
+  ]
+}

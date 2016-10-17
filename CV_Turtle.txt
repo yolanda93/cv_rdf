@@ -1,0 +1,34 @@
+@prefix cv: <http://captsolo.net/semweb/resume/0.2/cv.rdf#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon> cv:birthPlace "Madrid(Spain)" ;
+    cv:gender "female" ;
+    cv:hasCitizenship "Spain" ;
+    cv:hasDriversLicense true ;
+    cv:hasNationality "Spanish" ;
+    cv:maritalStatus "Single" ;
+    cv:noOfChildren "0" ;
+    foaf:mbox "yolanda93h@gmail.com" ;
+    foaf:name "Yolanda de la Hoz Simon" .
+
+<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#C++> cv:skillLastUsed "2012-02-23"^^xsd:date ;
+    cv:skillLevel "1" ;
+    cv:skillName "C++" ;
+    cv:skillYearsExperience 3 .
+
+<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#Java> cv:skillLastUsed "2012-02-23"^^xsd:date ;
+    cv:skillLevel "1" ;
+    cv:skillName "Java" ;
+    cv:skillYearsExperience 5 .
+
+<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/WorkHistory#Yolanda_de_la_Hoz_Simon> cv:employedIn <http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Company#Intelligent_Systems_And_Knowledge_Engineering_Research_Group-Technical_University_Of_Madrid> ;
+    cv:endDate "0101-01-01"^^xsd:date ;
+    cv:isCurrent false ;
+    cv:jobDescription "Research and development of intelligent systems for unmanned aerial vehicles" ;
+    cv:jobTitle "Software Engineer" ;
+    cv:jobType "Employee" ;
+    cv:startDate "0101-01-01"^^xsd:date .
