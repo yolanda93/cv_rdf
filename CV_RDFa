@@ -1,0 +1,56 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+  prefix="
+    foaf: http://xmlns.com/foaf/0.1/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    cv: http://captsolo.net/semweb/resume/0.2/cv.rdf#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#"
+  >
+  <div typeof="rdfs:Resource" about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/cv#resume-Yolanda_de_la_Hoz_Simon">
+    <div rel="cv:hasEducation" resource="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Education#Masters"></div>
+    <div property="cv:cvDescription" content="My Professional Resume"></div>
+    <div rel="cv:hasSkill">
+      <div typeof="rdfs:Resource" about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#Java">
+        <div property="cv:skillLevel" content="1"></div>
+        <div property="cv:skillName" content="Java"></div>
+        <div property="cv:skillLastUsed" datatype="xsd:date" content="2012-02-23"></div>
+        <div property="cv:skillYearsExperience" datatype="xsd:integer" content="5"></div>
+      </div>
+    </div>
+    <div rel="cv:aboutPerson">
+      <div typeof="rdfs:Resource" about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon">
+        <div property="cv:hasCitizenship" content="Spain"></div>
+        <div property="cv:gender" content="female"></div>
+        <div property="cv:hasNationality" content="Spanish"></div>
+        <div property="cv:birthPlace" content="Madrid(Spain)"></div>
+        <div property="foaf:mbox" content="yolanda93h@gmail.com"></div>
+        <div property="cv:maritalStatus" content="Single"></div>
+        <div property="cv:hasDriversLicense" datatype="xsd:boolean" content="true"></div>
+        <div property="foaf:name" content="Yolanda de la Hoz Simon"></div>
+        <div property="cv:noOfChildren" content="0"></div>
+      </div>
+    </div>
+    <div rel="cv:hasWorkHistory">
+      <div typeof="rdfs:Resource" about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/WorkHistory#Yolanda_de_la_Hoz_Simon">
+        <div property="cv:startDate" datatype="xsd:date" content="0101-01-01"></div>
+        <div property="cv:jobDescription" content="Research and development of intelligent systems for unmanned aerial vehicles"></div>
+        <div property="cv:jobTitle" content="Software Engineer"></div>
+        <div property="cv:isCurrent" datatype="xsd:boolean" content="false"></div>
+        <div property="cv:endDate" datatype="xsd:date" content="0101-01-01"></div>
+        <div property="cv:jobType" content="Employee"></div>
+        <div rel="cv:employedIn" resource="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Company#Intelligent_Systems_And_Knowledge_Engineering_Research_Group-Technical_University_Of_Madrid"></div>
+      </div>
+    </div>
+    <div property="cv:cvTitle" content="Resume-Yolanda de la Hoz Simon"></div>
+    <div property="cv:lastUpdate" datatype="xsd:date" content="2001-01-01"></div>
+    <div rel="cv:hasSkill">
+      <div typeof="rdfs:Resource" about="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs/Skill#C++">
+        <div property="cv:skillYearsExperience" datatype="xsd:integer" content="3"></div>
+        <div property="cv:skillLevel" content="1"></div>
+        <div property="cv:skillLastUsed" datatype="xsd:date" content="2012-02-23"></div>
+        <div property="cv:skillName" content="C++"></div>
+      </div>
+    </div>
+    <div property="cv:cvIsActive" datatype="xsd:boolean" content="false"></div>
+  </div>
+</div>
