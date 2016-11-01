@@ -1,0 +1,67 @@
+1- Search people whose previous job is "Software Engineer"
+
+    prefix cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs>
+    select * where {
+      ?Subject ?x ?y .
+      filter(?y = "Software Engineer") .
+    }
+
+    prefix cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs>
+    select * where {
+      ?Subject ?x  "Software Engineer"
+    }
+    
+2- Insert 2 people in the cv with the basic information and delete them
+
+prefix cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs/Person#>
+insert data {
+ cv:John  a cv:Person ; cv:maritalStatus "Single" ; cv:noOfChildren "0"; cv:birthPlace "Berlin(Germany)" ; cv:gender "male" ; cv:hasCitizenship "Germany" ; cv:hasDriversLicense "false" ;  cv:hasNationality "German"  .
+ cv:Maria a cv:Person ; cv:maritalStatus "Single" ; cv:noOfChildren "2"; cv:birthPlace "France(Paris)" ; cv:gender "female" ; cv:hasCitizenship "France" ; cv:hasDriversLicense "false" ;  cv:hasNationality "France"  .
+}
+
+prefix cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs/Person#>
+delete data {
+ cv:John  a cv:Person ; cv:maritalStatus "Single" ; cv:noOfChildren "0"; cv:birthPlace "Berlin(Germany)" ; cv:gender "male" ; cv:hasCitizenship "Germany" ; cv:hasDriversLicense "false" ;  cv:hasNationality "German"  .
+ cv:Maria a cv:Person ; cv:maritalStatus "Single" ; cv:noOfChildren "2"; cv:birthPlace "France(Paris)" ; cv:gender "female" ; cv:hasCitizenship "France" ; cv:hasDriversLicense "false" ;  cv:hasNationality "France"  .
+}
+
+3 -Find people that don't know Java
+
+select * where {
+?x a ?t
+filter not exists { ?x a cv:Java }
+}
+
+4 - See all the skills offers
+
+PREFIX cv:<http://captsolo.net/semweb/resume/0.2/cv.rdfs#>
+SELECT ?n ?l WHERE {
+  ?aux cv:skillName ?n .
+  ?aux cv:skillLevel ?l
+}
+
+5 - Obtain people and their jobs
+
+PREFIX cv:<http://captsolo.net/semweb/resume/0.2/cv.rdfs#>
+SELECT DISTINCT ?type WHERE {
+  ?a rdf:type foaf:Person .
+  ?a cv:jobTitle ?type    
+}
+ORDER BY ?type ASC(?type)
+
+
+6 - Querying information whose skill is C++ and it has 2 years experience 
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs#/cv#>
+
+select ?resume
+where
+{
+ ?resume cv:hasSkill ?s.
+ ?s cv:skillName "C++ ".
+ ?s cv:skillYearsExperience ?y.
+ FILTER (?y > 2).
+} 
+
