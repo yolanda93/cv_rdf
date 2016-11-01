@@ -87,6 +87,20 @@ filter (datatype(?g) = xsd:string)
 bind (xsd:string(?g) as ?string)
 }
 
+9 - Insert mails taking the name as nick name
+
+PREFIX h: <http://captsolo.net/semweb/resume/0.2/cv.rdfs#>
+PREFIX ex: <http://xmlns.com/foaf/0.1/>
+insert {
+[ ] foaf:mail ?mail
+}
+where {
+?x ex:name ?f ;
+bind (concat(?f, "@gmail.com")
+as ?mail)
+}
+
+ 
 
 
 
