@@ -65,3 +65,28 @@ where
  FILTER (?y > 2).
 } 
 
+7 - Rank people depending on their skills. Score is given as level average of their skills 
+
+PREFIX cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs#>
+select ?x (avg(?t) as ?skillLevel)
+where {
+?x cv:skillLevel  ?t 
+}
+group by ?x
+having (?skillLevel >= 4)
+
+8 - Update marital Status
+
+PREFIX cv: <http://captsolo.net/semweb/resume/0.2/cv.rdfs/Person#Yolanda_de_la_Hoz_Simon>
+PREFIX h: <http://captsolo.net/semweb/resume/0.2/cv.rdfs#>
+delete { ?x h:maritalStatus ?g }
+insert { ?x h:maritalStatus "Married" }
+where {
+?x h:gender ?g
+filter (datatype(?g) = xsd:string)
+bind (xsd:string(?g) as ?string)
+}
+
+
+
+
